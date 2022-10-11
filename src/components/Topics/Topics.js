@@ -7,7 +7,6 @@ import Row from 'react-bootstrap/Row';
 
 const Topics = () => {
     const topics = useLoaderData();
-    console.log(topics.data)
     return (
         <Container>
             <Header></Header>

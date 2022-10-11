@@ -17,7 +17,7 @@ const Nabvar = () => {
                     <Nav className="ms-auto align-items-center">
 
 
-                        <Link to='/' className='text-decoration-none m-2'>Topics</Link>
+                        <Link to='/topics' className='text-decoration-none m-2'>Topics</Link>
 
                         <Link to='/statictis' className='text-decoration-none m-2'>Statictis</Link>
 
