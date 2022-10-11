@@ -10,12 +10,12 @@ const Question = ({ quiz }) => {
             <Row xs={1} md={2} className='g-3'>
                 {
                     options.map(option => <Col>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
-                            <label class="form-check-label" for="flexRadioDefault1">
-                                {option}
-                            </label>
-                        </div>
+                        <button className='border-0 bg-white'>
+                            <input className="form-check-input border border-3 border-primary" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1" />
+                        </button>
+
+                        <span>{option}</span>
+
                     </Col>)
                 }
             </Row>
