@@ -1,20 +1,30 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Col, Row } from 'react-bootstrap';
 
-const Question = ({ quiz }) => {
+const Quiz = ({ quiz }) => {
     console.log(quiz);
+    const [answer, setAnswer] = useState();
+    const handleCheckboxButton = (e) => {
+        console.log(e.target)
+        setAnswer(e.target.innerText);
+    }
     const { question, options } = quiz;
     return (
-        <Col className='shadow p-5'>
-            <h2>{question}</h2>
+        <Col className='shadow-lg p-5 bg-dark text-light rounded'>
+            <h2 className='mb-4'>
+                {
+                    question.slice(3, -4)
+                }
+            </h2>
             <Row xs={1} md={2} className='g-3'>
                 {
                     options.map(option => <Col>
-                        <button className='border-0 bg-white'>
-                            <input className="form-check-input border border-3 border-primary" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1" />
-                        </button>
+                        <button onClick={handleCheckboxButton} className='bg-success text-white w-100 border-0 rounded p-2 text-start'>
+                            <input className="form-check-input border border-5 p-2 border-primary me-3" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1" />
 
-                        <span>{option}</span>
+                            {option}
+
+                        </button>
 
                     </Col>)
                 }
@@ -23,4 +33,4 @@ const Question = ({ quiz }) => {
     );
 };
 
-export default Question;
+export default Quiz;
