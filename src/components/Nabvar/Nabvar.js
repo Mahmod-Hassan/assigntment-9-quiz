@@ -4,7 +4,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Link } from 'react-router-dom';
 
-const Header = () => {
+const Nabvar = () => {
 
     return (
 
@@ -16,7 +16,9 @@ const Header = () => {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ms-auto align-items-center">
 
-                        <Link to='/' className='text-decoration-none m-2'>Topics</Link>
+                        <Link to='/' className='text-decoration-none m-2'>Home</Link>
+
+                        <Link to='/topics' className='text-decoration-none m-2'>Topics</Link>
 
                         <Link to='/statictis' className='text-decoration-none m-2'>Statictis</Link>
 
@@ -28,4 +30,4 @@ const Header = () => {
     );
 };
 
-export default Header;
+export default Nabvar;

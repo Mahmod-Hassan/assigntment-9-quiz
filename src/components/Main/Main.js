@@ -1,11 +1,11 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
-import Header from '../Header/Header';
+import Nabvar from '../Nabvar/Nabvar';
 
 const Main = () => {
     return (
         <div>
-            <Header></Header>
+            <Nabvar></Nabvar>
             <Outlet></Outlet>
         </div>
     );

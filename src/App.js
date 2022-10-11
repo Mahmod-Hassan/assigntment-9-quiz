@@ -1,5 +1,6 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Blog from "./components/Blog/Blog";
+import Home from "./components/Home/Home";
 import Main from "./components/Main/Main";
 import PageNotFound from "./components/PageNotFound/PageNotFound";
 import Statics from "./components/Statics/Statics";
@@ -12,6 +13,10 @@ function App() {
     children: [
       {
         path: '/',
+        element: <Home></Home>
+      },
+      {
+        path: '/topics',
         element: <Topics></Topics>
       },
       {
