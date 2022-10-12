@@ -9,8 +9,9 @@ const Nabvar = () => {
     return (
 
         // here is the header or narvar
-        <Navbar sticky='top' bg="dark" className='p-0' expand="lg">
+        <Navbar sticky='top' bg="dark" className='mx-md-5' expand="lg">
             <Container>
+
                 <Navbar.Brand className='fs-2 fw-bold text-uppercase font-monospace text-danger'>Quiz Test</Navbar.Brand>
                 <Navbar.Toggle className='bg-light' aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
@@ -24,6 +25,7 @@ const Nabvar = () => {
                         <Link to='/blog' className='text-decoration-none m-2 text-white fs-5'>Blog</Link>
                     </Nav>
                 </Navbar.Collapse>
+
             </Container>
         </Navbar>
     );

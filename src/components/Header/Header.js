@@ -11,7 +11,7 @@ const Header = () => {
 
 
             <Col md={9}>
-                <h4 className='text-light lead'> <span className='fs-1 text-danger'>HI !!! </span>You can test your programming knoladge in this site. Here are many quizes on different topics about web-development that you can try.You can improve your skill in my website. So start now...</h4>
+                <h4 className='text-light lead'> <span className='fs-1 text-danger'>HI !!! </span>You can test your programming knoladge in this site. Here are many quizes on different topics about web-development that you can try.You can improve your skill in this website. So start now...</h4>
             </Col>
 
         </Row>

@@ -5,7 +5,7 @@ const Blog = () => {
     return (
 
         <Accordion defaultActiveKey="0" alwaysOpen flush className='w-75 mx-auto'>
-            <h2 className='text-primary text-center my-3'>Learn about react..</h2>
+            <h2 className='text-primary text-center my-3'>Learn About React..</h2>
 
             {/* question number 1 start */}
             <Accordion.Item eventKey="0">

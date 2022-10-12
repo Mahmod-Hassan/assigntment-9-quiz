@@ -8,7 +8,7 @@ import Row from 'react-bootstrap/Row';
 const Topics = () => {
     const topics = useLoaderData();
     return (
-        <Container className='bg-dark p-5 mt-5'>
+        <Container className='bg-dark p-5 sm:m-5 my-5'>
             <Header></Header>
             <Row xs={1} md={2} lg={4} className="g-4">
                 {
