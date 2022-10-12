@@ -8,8 +8,8 @@ const TopicDetails = () => {
     console.log(details);
     const questions = details.data.questions;
     return (
-        <Container >
-            <Row xs={1} className='g-4 mt-4'>
+        <Container>
+            <Row className='g-4 mt-4'>
                 <h1 className='text-center text-primary'>Quiz of {details.data.name}</h1>
                 {
                     questions.map(quiz => <Quiz
