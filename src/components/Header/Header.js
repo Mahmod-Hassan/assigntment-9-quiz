@@ -4,7 +4,7 @@ import { Col, Row } from 'react-bootstrap';
 const Header = () => {
     return (
         <Row xs={1} md={2} className='d-flex my-5'>
-            {/* my Image */}
+            {/* header image */}
             <Col md={3} className='text-center'>
                 <img className='img-fluid rounded-4' width={200} height={200} src="https://media.istockphoto.com/vectors/quiz-time-neon-sign-style-text-vector-id1290210769?k=20&m=1290210769&s=612x612&w=0&h=M8Y2QEzA_KrYmTxsOwvfNTOegawrjC0UGmj86zJJBF0=" alt="" />
             </Col>

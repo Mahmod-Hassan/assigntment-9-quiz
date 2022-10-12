@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import { Col, Row } from 'react-bootstrap';
+import Options from '../Options/Options';
 
 const Quiz = ({ quiz }) => {
     const { question, options, correctAnswer } = quiz;
+    console.log(quiz);
     const [answerValidation, setAnswerValidation] = useState();
 
     const handleQuizButton = (index) => {
@@ -24,10 +26,11 @@ const Quiz = ({ quiz }) => {
             </h2>
             <Row xs={1} md={2} className='g-3'>
                 {
-                    options.map((option, idx) => <Col key={idx} >
-                        <button onClick={() => handleQuizButton(idx)} className={'bg-light w-100 border-0 rounded p-2 text-start'}>{option}</button>
-                    </Col>
-                    )
+                    options.map((option, idx) => <Options
+                        key={idx}
+                        option={option}
+                    >
+                    </Options>)
                 }
 
             </Row>
