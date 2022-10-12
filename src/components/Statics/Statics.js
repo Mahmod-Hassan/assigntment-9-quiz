@@ -3,9 +3,11 @@ import { useLoaderData } from 'react-router-dom';
 import { LineChart, Line, CartesianGrid, XAxis, YAxis, Tooltip } from 'recharts';
 
 const Statics = () => {
+
     const topics = useLoaderData();
     const data = topics.data;
-    console.log(data);
+
+
     return (
         <>
             <h3 className='text-center text-primary mt-5'>Rechart of Quizes</h3>

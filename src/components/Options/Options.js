@@ -4,8 +4,9 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const Options = ({ option, correctAnswer }) => {
-    console.log(option);
-    const [isValid, setIsValid] = useState('abc');
+
+    const [isValid, setIsValid] = useState();
+
     const handleQuizOptionButton = (e) => {
         let optionValue = e.target.innerText;
         if (optionValue === correctAnswer) {
@@ -13,11 +14,14 @@ const Options = ({ option, correctAnswer }) => {
             setIsValid(optionValue);
         } else {
             wrong();
-            setIsValid('');
+            setIsValid(false);
         }
     }
+
     const right = () => toast.success('correct! woow!!')
     const wrong = () => toast.error(`Your answer is wrong`)
+
+
     return (
         <Col>
             {

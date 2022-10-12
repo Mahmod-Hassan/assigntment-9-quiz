@@ -4,9 +4,11 @@ import { useLoaderData } from 'react-router-dom';
 import Quiz from '../Quiz/Quiz';
 
 const TopicDetails = () => {
+
     const details = useLoaderData();
-    console.log(details);
     const questions = details.data.questions;
+
+
     return (
         <Container>
             <Row className='g-4 mt-4'>

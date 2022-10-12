@@ -2,6 +2,7 @@ import React from 'react';
 import Accordion from 'react-bootstrap/Accordion';
 
 const Blog = () => {
+
     return (
 
         <Accordion defaultActiveKey="0" alwaysOpen flush className='w-75 mx-auto'>

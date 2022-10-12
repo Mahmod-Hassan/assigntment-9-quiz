@@ -7,8 +7,11 @@ import Options from '../Options/Options';
 
 
 const Quiz = ({ quiz }) => {
+
     const { question, options, correctAnswer } = quiz;
     const showCorrectAnswer = () => toast.info(`correct answer is ${correctAnswer}`)
+
+
     return (
         <Col xs={10} lg={7} className='shadow-lg p-5 rounded mx-auto'>
             <div className='d-flex'>
